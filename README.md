@@ -8,6 +8,7 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 2.在config文件上加上@EnableEsConfig(clusterName = "${search.cluster.name}",socketAddressStrings = "${search.es.addresses}")
+  支持占位符 ${}
   参数意义：1.clusterName：集群名称 
            2.socketAddressStrings：ES地址-支持集群采用英文逗号隔开；
                  例如：172.21.247.89:9300,172.21.247.89:9300
